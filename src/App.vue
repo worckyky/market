@@ -10,15 +10,15 @@
     </div>
 
     <div class="wrapper">
-      <div class="product-filter">
-        <p>Фильтры:</p>
-        <div class="product-filter-buttons">
-          <button @click="filterByLabel('Все')" :class="{'active': isSelected('Все')}">Все</button>
-          <button @click="filterByLabel('Напитки')" :class="{'active': isSelected('Напитки')}">Напитки</button>
-          <button @click="filterByLabel('Снеки')" :class="{'active': isSelected('Снеки')}">Снеки</button>
-          <button @click="filterByLabel('Еще что-то')" :class="{'active': isSelected('Еще что-то')}">Бургеры</button>
-        </div>
-      </div>
+<!--      <div class="product-filter">-->
+<!--        <p>Фильтры:</p>-->
+<!--        <div class="product-filter-buttons">-->
+<!--          <button @click="filterByLabel('Все')" :class="{'active': isSelected('Все')}">Все</button>-->
+<!--          <button @click="filterByLabel('Напитки')" :class="{'active': isSelected('Напитки')}">Напитки</button>-->
+<!--          <button @click="filterByLabel('Снеки')" :class="{'active': isSelected('Снеки')}">Снеки</button>-->
+<!--          <button @click="filterByLabel('Еще что-то')" :class="{'active': isSelected('Еще что-то')}">Бургеры</button>-->
+<!--        </div>-->
+<!--      </div>-->
       <div class="product-list">
         <div v-for="product in products" :key="product.id">
           <ProductItem

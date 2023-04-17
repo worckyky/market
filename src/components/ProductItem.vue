@@ -101,6 +101,7 @@ export default {
   line-height: 28px;
   text-transform: uppercase;
   margin-bottom: 16px;
+  min-height: 84px;
 }
 
 .product-description {
